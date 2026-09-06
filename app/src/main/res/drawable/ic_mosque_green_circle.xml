@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="54dp"
+    android:height="54dp"
+    android:viewportWidth="54"
+    android:viewportHeight="54">
+
+    <!-- Teal/Emerald Circular Background matching user's screenshot #167a6d -->
+    <path
+        android:fillColor="#167A6D"
+        android:pathData="M27,2 A25,25 0 1,0 52,27 A25,25 0 0,0 27,2 Z" />
+
+    <!-- 45-degree Long Soft Drop Shadow of Mosque across the circle -->
+    <path
+        android:fillColor="#0D554C"
+        android:pathData="M27,15 L43,31 L43,44 L27,44 L15,44 L27,15 Z" />
+
+    <path
+        android:fillColor="#0E5E54"
+        android:pathData="M39,18 L48,27 L48,41 L39,41 Z" />
+
+    <!-- Mosque Base Silhouette in Crisp Pure White -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M16,28 L38,28 L38,41 L16,41 Z" />
+
+    <!-- Central Grand Dome -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M27,14 C23,17 19,21 19,28 L35,28 C35,21 31,17 27,14 Z" />
+
+    <!-- Crescent Spire on Top of Central Dome -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M27,11 L27.6,13.5 L26.4,13.5 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M27,9.5 A1.5,1.5 0 1,1 28.5,11 A1.5,1.5 0 0,1 27,9.5 Z" />
+
+    <!-- Center Arched Door (Teal Cutout) -->
+    <path
+        android:fillColor="#167A6D"
+        android:pathData="M24,41 L24,33 C24,31.5 25.3,30.5 27,30.5 C28.7,30.5 30,31.5 30,33 L30,41 Z" />
+
+    <!-- Left Minaret (Slender Spire) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M13,20 L15.5,20 L15.5,41 L13,41 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12.5,19 L16,19 L14.25,16 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M14.25,14 L14.7,16 L13.8,16 Z" />
+
+    <!-- Right Minaret (Slender Spire) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M38.5,20 L41,20 L41,41 L38.5,41 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M38,19 L41.5,19 L39.75,16 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M39.75,14 L40.2,16 L39.3,16 Z" />
+
+</vector>

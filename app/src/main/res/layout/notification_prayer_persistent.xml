@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notification_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_notification_bronze"
+    android:minHeight="72dp"
+    android:paddingStart="4dp"
+    android:paddingEnd="8dp"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp">
+
+    <!-- Ornate Islamic Corner Ornament on the Far Left -->
+    <ImageView
+        android:id="@+id/iv_corner_ornament"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_islamic_corner_ornament" />
+
+    <!-- Teal Circular Mosque Icon on the Far Right -->
+    <ImageView
+        android:id="@+id/iv_mosque_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_mosque_green_circle" />
+
+    <!-- Center Content Section between Left Ornament and Right Mosque Icon -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@id/iv_corner_ornament"
+        android:layout_toStartOf="@id/iv_mosque_icon"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- Prayer Name and Hijri Date Column (Left-Center) -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+            android:gravity="center_vertical|start"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_next_prayer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="العصر"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_hijri_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="23 ربيع الأول 1448 هـ"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Remaining Time Label & Countdown Column (Right-Center) -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingStart="6dp"
+            android:paddingEnd="4dp">
+
+            <TextView
+                android:id="@+id/tv_countdown_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الوقت المتبقي"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/tv_countdown_remaining"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="m57h 02"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

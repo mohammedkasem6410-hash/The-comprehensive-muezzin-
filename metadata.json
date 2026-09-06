@@ -1,0 +1,6 @@
+{
+  "name": "مواقيت الصلاة والأذان",
+  "description": "تطبيق متكامل لمواقيت الصلاة، تنبيهات الأذان، الأذان المرئي ملء الشاشة، إشعار دائم مخصص، ودجت، وإعدادات المسحراتي.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
